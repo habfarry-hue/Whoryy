@@ -6,7 +6,7 @@
 local keyUrl = "https://raw.githubusercontent.com/habfarry-hue/Whoryy/refs/heads/main/key.txt"  -- GANTI DENGAN LINK KEY LO
 local key = game:HttpGet(keyUrl)
 
-if key ~= "WHORYTCION-" then  -- GANTI DENGAN KEY YANG LO MAU
+if key ~= "WHORYTCION" then  -- GANTI DENGAN KEY YANG LO MAU
     game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "WHORY",
         Text = "Key invalid!",
