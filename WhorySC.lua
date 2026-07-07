@@ -3,13 +3,20 @@
 -- ============================================================
 
 -- === CEK KEY DARI SERVER ===
-local keyUrl = "https://raw.githubusercontent.com/habfarry-hue/Whoryy/refs/heads/main/key.txt"  -- GANTI DENGAN LINK KEY LO
+-- === CEK KEY DARI SERVER ===
+local keyUrl = "https://raw.githubusercontent.com/habfarry-hue/Whoryy/refs/heads/main/key.txt"
 local key = game:HttpGet(keyUrl)
 
-if key ~= "WHORYTCION" then  -- GANTI DENGAN KEY YANG LO MAU
+-- BARIS INI PENTING: Membersihkan spasi dan enter
+key = key:gsub("%s+", "") 
+
+-- Debugging: Print ke F9 untuk melihat apa yang sebenarnya dibaca
+print("Key yang terbaca: '" .. key .. "'") 
+
+if key ~= "WHORYTCION" then
     game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "WHORY",
-        Text = "Key invalid!",
+        Text = "Key invalid! (Format salah/Key tidak cocok)",
         Duration = 5
     })
     return
