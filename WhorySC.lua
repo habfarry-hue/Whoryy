@@ -3,7 +3,7 @@
 -- ============================================================
 
 -- === CEK KEY DARI SERVER ===
-local keyUrl = "https://pastebin.com/raw/YOUR_KEY_ID"  -- GANTI DENGAN LINK KEY LO
+local keyUrl = "https://raw.githubusercontent.com/habfarry-hue/Whoryy/refs/heads/main/key.txt"  -- GANTI DENGAN LINK KEY LO
 local key = game:HttpGet(keyUrl)
 
 if key ~= "WHORY-2025" then  -- GANTI DENGAN KEY YANG LO MAU
